@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/coin-flip.css">    
+</head>
+<body>
+   <div class="container"> 
+       <div class="row">
+           <div class="col-4 bg">
+                <h1>Flip A Coin!</h1>
+                <h2>Guess Heads or Tails:</h2>
+                
+                <button id="heads" class="btn btn-warning">Heads</button>
+                <button id="tails" class="btn btn-warning">Tails</button>
+                
+                <div> You guessed:
+                    <span id="guess"></span>
+                </div>
+                
+                <br>
+                
+                <div id="coin-image"></div>
+                <div id="win-lose"></div>
+                <div id="win-loss-tracker">
+                    <div class="row">
+                        <h3 class="col-lg-8">Wins: </h3>
+                        <span id="wins" class="col-lg-4"></span>
+                    </div>
+                
+                    <div class="row">
+                        <h3 class="col-lg-8">Losses: </h3>
+                        <span id="losses" class="col-lg-4"></span>
+                    </div>
+                
+                    <div class="row">
+                        <h3 class="col-lg-8">Heads chosen: </h3>
+                        <span id="heads-chosen" class="col-lg-4"></span>
+                    </div>
+                
+                    <div class="row">
+                        <h3 class="col-lg-8">Tails chosen: </h3>
+                        <span id="tails-chosen" class="col-lg-4"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="flip-coin">
+                    <div class="flip-coin-inner">
+                        <div class="flip-coin-heads">
+                            <img src="https://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg" alt="heads">
+                        </div>
+                        <div class="flip-coin-tails">
+                            <img src="https://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg" alt="tails">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/coins.js"></script>
+</body>
+</html>
